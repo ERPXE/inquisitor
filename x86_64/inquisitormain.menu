@@ -1,0 +1,26 @@
+LABEL INQUISITOR30X64
+MENU LABEL ^Inquisitor x64
+KERNEL er/plugins/inquisitor/x86_64/vmlinuz64
+INITRD er/plugins/inquisitor/x86_64/full64.cz
+APPEND live fastboot automatic=method:http,network:dhcp,server:10.0.0.1,directory:/er/inquisitor/x86_64 stagename=livecd showopts ramdisk_size=200000
+TEXT HELP
+                 Inquisitor x64 - Hardware Testing CD.
+ENDTEXT
+
+LABEL INQUISITOR30X64QEMU
+MENU LABEL ^Inquisitor x64 QEMU
+KERNEL er/plugins/inquisitor/x86_64/vmlinuz64
+INITRD er/plugins/inquisitor/x86_64/full64.cz
+APPEND live fastboot automatic=method:http,network:dhcp,server:10.0.0.1,directory:/er/inquisitor/x86_64 stagename=altlinux/livecd showopts console=tty0 console=ttyS0,115200n8 ramdisk_size=200000
+TEXT HELP
+                 Inquisitor x64 - Hardware Testing CD.
+ENDTEXT
+
+LABEL INQUISITOR30X64KERNEL2
+MENU LABEL ^Inquisitor x64 KERNEL 2.6.24-wks-smp-alt2.4
+KERNEL er/plugins/inquisitor/x86_64/vmlinuz2624wkssmpalt2464
+INITRD er/plugins/inquisitor/x86_64/full2624wkssmpalt2464.cz
+APPEND live fastboot automatic=method:http,network:dhcp,server:10.0.0.1,directory:/er/inquisitor/x86_64 stagename=altlinux/livecd showopts ramdisk_size=200000
+TEXT HELP
+                 Inquisitor x64 - Hardware Testing CD.
+ENDTEXT
