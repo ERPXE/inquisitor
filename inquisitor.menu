@@ -1,9 +1,6 @@
 MENU BEGIN INQUISITOR
+MENU TITLE Inquisitor 3.0
 MENU LABEL ^Inquisitor 3.0
-# ------====> Include Menu Settings <====------
-MENU INCLUDE er/menuinc/header.module
-
-# ------====> Set Specific Page Settings <====------
 MENU BACKGROUND er/plugins/inquisitor/inquisitor.png
 
 MENU INCLUDE er/plugins/inquisitor/i386/inquisitormain.menu
